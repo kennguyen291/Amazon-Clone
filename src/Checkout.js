@@ -1,4 +1,4 @@
-import React from "react";
+ import React from "react";
 import Subtotal from "./Subtotal";
 import "./Checkout.css";
 import CheckoutProduct from "./CheckoutProduct";
@@ -16,6 +16,7 @@ function Checkout() {
           alt=""
         />
         <div>
+          <h3>Hello, {user?.email}</h3>
           <h2 className="checkout__title">Your Shopping Basket</h2>
           {basket.map((item) => (
             <CheckoutProduct
